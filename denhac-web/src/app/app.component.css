@@ -1,0 +1,10 @@
+.content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/487.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: green; */
+}
