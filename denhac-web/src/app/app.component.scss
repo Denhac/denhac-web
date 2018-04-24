@@ -1,0 +1,33 @@
+.content {
+  display: block;
+  background-color: green;
+  /* width: 100%;
+    height: 100%; */
+  /* background-image: url("/assets/487.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  width: 1200px;
+  align-content: center;
+  margin: auto;
+  /* background-color: green; */
+}
+
+.navbar {
+  max-width: 300px;
+}
+
+nav {
+  max-width: 300px;
+}
+
+.data-block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin: 10px;
+}
+
+.item {
+  background-color: red;
+}
