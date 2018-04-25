@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainDashComponent } from './main-dash/main-dash.component';
 import { DonateComponent } from './donate/donate.component';
+import { MemberResourcesComponent } from './member-resources/member-resources.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 
 const appRoutes: Routes = [
@@ -24,9 +26,12 @@ const appRoutes: Routes = [
   {
     path: 'donate',
     component: DonateComponent
-  }
-  // ,
-  // { path: '**', component: PageNotFoundComponent }
+  },
+  {
+    path: 'member-services',
+    component: MemberResourcesComponent
+  },
+  { path: '**', component: NotFoundPageComponent }
 ];
 
 @NgModule({
@@ -34,7 +39,9 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     MainDashComponent,
-    DonateComponent
+    DonateComponent,
+    MemberResourcesComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
