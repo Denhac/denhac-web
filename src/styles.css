@@ -1,7 +1,8 @@
 body {
-  background-image: url("./assets/exploded.jpg");
-  background-color: green;
-  color: f0fefe;
+  background-image: url("./assets/denhac_background.png");
+  background-color: black;
+  background-position-x: 0px;
+  color: #f0fefe;
   background-size: 80%;
   background-position: center;
 }
