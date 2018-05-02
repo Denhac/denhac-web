@@ -1,4 +1,7 @@
 body {
-  background-color: #000000;
-  color: white;
+  background-image: url("./assets/exploded.jpg");
+  background-color: green;
+  color: f0fefe;
+  background-size: 80%;
+  background-position: center;
 }
