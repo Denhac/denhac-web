@@ -7,9 +7,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainDashComponent } from './main-dash/main-dash.component';
-import { DonateComponent } from './donate/donate.component';
-import { MemberResourcesComponent } from './member-resources/member-resources.component';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+
+// Pages
+import { DonateComponent } from './pages/donate/donate.component';
+import { MemberResourcesComponent } from './pages/member-resources/member-resources.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ClassesComponent } from './pages/classes/classes.component';
 
 
 const appRoutes: Routes = [
@@ -31,6 +35,14 @@ const appRoutes: Routes = [
     path: 'member-services',
     component: MemberResourcesComponent
   },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'classes',
+    component: ClassesComponent
+  },
   { path: '**', component: NotFoundPageComponent }
 ];
 
@@ -41,7 +53,9 @@ const appRoutes: Routes = [
     MainDashComponent,
     DonateComponent,
     MemberResourcesComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    AboutComponent,
+    ClassesComponent
   ],
   imports: [
     BrowserModule,
