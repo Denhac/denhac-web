@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from "@angular/flex-layout";
 import { RouterModule, Routes } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
@@ -60,7 +59,6 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule,
     AngularFontAwesomeModule,
     RouterModule.forRoot(
       appRoutes,
