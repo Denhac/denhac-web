@@ -10,21 +10,29 @@ body {
 .dashboard {
   width: 80%;
   margin: auto;
-  padding: 3px;
   background-color: #83a0c6;
   margin-top: 35px;
   margin-bottom: 40px;
   .hero {
-    height: 400px;
+    // height: 400px;
+  }
+  .row {
+    padding-left: 3px;
+    padding-right: 3px;
   }
 }
 
 .dash-item {
+  margin: 2px;
   // display: inline-block;
   .corner_icon {
-    margin: auto;
-    display: block;
-    padding: 7px;
+
+    padding: 6px;
+    text-align: center;
+    img {
+      margin: auto;
+      display: block;
+    }
   }
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8097bd+0,546e8a+100 */
   background: #8097bd;
