@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 body {
   background-image: url("./assets/denhac_background.png");
   background-color: black;
@@ -5,10 +6,12 @@ body {
   color: #f0fefe;
   background-size: 80%;
   background-position: center;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 .dashboard {
   width: 80%;
+  max-width: 1000px;
   margin: auto;
   background-color: #83a0c6;
   margin-top: 35px;
@@ -23,10 +26,8 @@ body {
 }
 
 .dash-item {
-  margin: 2px;
-  // display: inline-block;
+  margin: 2px; // display: inline-block;
   .corner_icon {
-
     padding: 6px;
     text-align: center;
     img {
