@@ -14,6 +14,7 @@ import { MemberResourcesComponent } from './pages/member-resources/member-resour
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ClassesComponent } from './pages/classes/classes.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 
 
 const appRoutes: Routes = [
@@ -43,6 +44,10 @@ const appRoutes: Routes = [
     path: 'classes',
     component: ClassesComponent
   },
+  {
+    path: 'payment/:type',
+    component: PaymentComponent
+  },
   { path: '**', component: NotFoundPageComponent }
 ];
 
@@ -55,7 +60,8 @@ const appRoutes: Routes = [
     MemberResourcesComponent,
     NotFoundPageComponent,
     AboutComponent,
-    ClassesComponent
+    ClassesComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
