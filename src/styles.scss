@@ -1,4 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+// Mobile First
+@media only screen and (max-width: 600px) {
+  .dash-item {
+      h1 {
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 15px;
+      }
+  }
+  .dashboard {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .dashboard {
+    width: 80%;
+  }
+}
+
+
 body {
   background-image: url("./assets/denhac_background.png");
   background-color: black;
@@ -10,7 +38,6 @@ body {
 }
 
 .dashboard {
-  width: 80%;
   max-width: 1000px;
   margin: auto;
   background-color: #83a0c6;
