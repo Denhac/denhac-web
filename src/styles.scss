@@ -27,14 +27,15 @@ body {
 
 .dash-item {
   margin: 2px; // display: inline-block;
-  .corner_icon {
-    padding: 6px;
+  &.corner_icon {
+     padding: 6px;
     text-align: center;
     img {
       margin: auto;
       display: block;
     }
   }
+  border-radius: 3px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8097bd+0,546e8a+100 */
   background: #8097bd;
   /* Old browsers */
@@ -54,4 +55,7 @@ body {
   endColorstr='#546e8a',
   GradientType=0);
   /* IE6-9 */
+}
+.clickable {
+  cursor: pointer;
 }
