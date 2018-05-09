@@ -15,7 +15,7 @@ export class MainDashComponent implements OnInit {
 
   navMap()
   {
-    window.location.href = 'https://goo.gl/maps/BY1m9gQMj2q';
+    window.open('https://goo.gl/maps/BY1m9gQMj2q', '_blank');
   }
 
 }

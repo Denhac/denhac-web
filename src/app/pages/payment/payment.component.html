@@ -1,3 +1,53 @@
-<p>
-  payment works! {{isRecurring}}
-</p>
+<div class="container dashboard">
+  <!-- dashboard -->
+  <div class="row">
+    <div class="dash-item col">
+      <h1 *ngIf="!isRecurring">One Time Membership Payments</h1>
+      <h1 *ngIf="isRecurring">Reoccurring Membership Payments</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="dash-item col-2 txt-center">
+      <fa name="exclamation" size="5x" class="warning-icon"></fa>
+    </div>
+    <div class="dash-item col warning">
+      <h3>If you have not already signed up for a membership with a denhac board member, any money submitted to denhac via this
+        form will be considered a donation.
+      </h3>
+    </div>
+    </div>
+    <div class="row">
+      <div *ngIf="!isRecurring" class="dash-item col payment-form">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="NMRY82CN3QKRS">
+            <table>
+              <tbody><tr><td><input type="hidden" name="on0" value="Membership Options">Membership Options</td></tr><tr><td><select name="os0">
+                <option value="Student Membership">Student Membership $25.00 USD</option>
+                <option value="Regular Membership">Regular Membership $50.00 USD</option>
+                <option value="Family Membership">Family Membership $75.00 USD</option>
+              </select> </td></tr>
+            </tbody></table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+      </div>
+      <div *ngIf="isRecurring" class="dash-item col payment-form">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="8D7ZPHY54R89C">
+            <table>
+              <tbody><tr><td><input type="hidden" name="on0" value="Membership Options">Membership Options</td></tr><tr><td><select name="os0">
+                <option value="Student Membership">Student Membership : $22.50 USD - monthly</option>
+                <option value="Regular Membership">Regular Membership : $45.00 USD - monthly</option>
+                <option value="Family Membership">Family Membership : $67.50 USD - monthly</option>
+              </select> </td></tr>
+            </tbody></table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+      </div>
+    </div>
+  </div>

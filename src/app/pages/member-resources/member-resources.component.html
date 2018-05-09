@@ -6,20 +6,37 @@
       </div>
     </div>
     <div class="row">
+        <div (click)="goToPayment('reoccurring')" class="dash-item col">
+    <p>Membership is obtained by visiting us during one our open houses and talking with a board member about signing up. </p>
+    </div>
+  </div>
+
+    <div class="row">
       <div class="dash-item col hero">
       </div>
     </div>
+    </div>
+    <div class="container dashboard">
     <div class="row">
         <div class="dash-item col">
           <h1>Current Memebrs</h1>
         </div>
       </div>
-    <div class="row">
-      <div (click)="goToPayment('reoccurring')" class="dash-item col txt-center clickable">
-          
-       </div>
-      <div (click)="goToPayment('onetime')" class="dash-item col txt-center clickable">
 
-      </div>
+    <div class="row">
+        <div (click)="goToPayment('onetime')" class="dash-item col txt-center clickable">
+            <h2>One Time Member Payments</h2>
+            <fa name="angle-up" size="4x"></fa>
+          </div>
+      <div (click)="goToPayment('reoccurring')" class="dash-item col txt-center clickable">
+          <h2>Reoccurring Member Payments</h2>
+          <fa name="angle-double-up" size="4x"></fa>
+       </div>
+
     </div>
+    <div class="row">
+        <div (click)="goToPayment('reoccurring')" class="dash-item col">
+    <p>A 10% discount shall be applied, if dues payment is set up as a Subscription (auto-recurring) in PayPal.</p>
+    </div>
+  </div>
   </div>
